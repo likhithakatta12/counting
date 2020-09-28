@@ -1,0 +1,11 @@
+def most_frequent(string):
+    b=sorted(string)
+    c={}
+    for i in b:
+        if i in c:
+            c[i]+=1
+        else:
+            c[i]=1
+    return c
+a=input("Enter a string:")
+print(most_frequent(a))
